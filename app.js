@@ -5,11 +5,12 @@ fetch(
 )
   .then((res) => res.json())
   .then((res) => {
-    console.log(res.results[2]);
-    img.src = res.results[2].image;
+    console.log(res.results[1]);
+    img.src = res.results[1].image;
   });
+
 fetch(
-  "https://api.spoonacular.com/recipes/1095806/information?includeNutrition=false&apiKey=acb2b9694ef64c6eafeff89a7dcf716f"
+  "https://api.spoonacular.com/recipes/662294/information?includeNutrition=false&apiKey=acb2b9694ef64c6eafeff89a7dcf716f"
 )
   .then((res) => res.json())
   .then((res) => {
