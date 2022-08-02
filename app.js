@@ -39,6 +39,7 @@ function renderDishes(dishes) {
 
 function renderDishInfoFromResults(dish) {
   img.src = dish.image;
+
   fetch(
     `https://api.spoonacular.com/recipes/${dish.id}/information?includeNutrition=false&apiKey=acb2b9694ef64c6eafeff89a7dcf716f`
   )
@@ -52,6 +53,10 @@ function renderDishInfoFromResults(dish) {
       ingredients.textContent = list.join(", ");
       recipe.textContent = res.instructions;
       recipeTitle.textContent = res.title;
+      let saveButton = document.createElement("button");
+      saveButton.textContent = "SAVE RECIPE FOR LATER?";
+      saveButton.addEventListener("click", () => saveRecipe(res));
+      recipeTitle.append(saveButton);
     });
 }
 function renderSavedDish(id) {
@@ -66,6 +71,25 @@ function renderSavedDish(id) {
 }
 
 renderSavedDish(1);
+
+function saveRecipe(res) {
+  let newObject = {
+    title: res.title,
+    image: res.image,
+    ingredients: res.extendedIngredients,
+    instructions: res.instructions,
+  };
+
+  fetch(`http://localhost:3000/recipes`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(newObject),
+  });
+
+  console.log(newObject);
+}
 
 // fetch(
 //   "https://api.spoonacular.com/recipes/complexSearch?query=pasta&apiKey=acb2b9694ef64c6eafeff89a7dcf716f"
