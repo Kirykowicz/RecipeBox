@@ -99,6 +99,7 @@ function renderSavedRecipesList() {
         btn.textContent = "Remove from favorites";
         li.append(btn);
         btn.addEventListener("click", () => removeRecipe(recipe));
+        li.addEventListener("click", () => renderSavedDish(recipe.id));
         savedList.append(li);
       });
     });
