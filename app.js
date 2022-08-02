@@ -2,7 +2,6 @@ const img = document.querySelector("img");
 const ingredients = document.querySelector("#ingredients");
 const recipe = document.querySelector("#recipe");
 const recipeTitle = document.querySelector("#recipe-title");
-img.src = defaultImage;
 
 let searchResultsArray = [];
 let searchResultsId = [];
@@ -55,6 +54,18 @@ function renderDishInfoFromResults(dish) {
       recipeTitle.textContent = res.title;
     });
 }
+function renderSavedDish(id) {
+  fetch(`http://localhost:3000/recipes/${id}`)
+    .then((res) => res.json())
+    .then((res) => {
+      ingredients.textContent = res.ingredients;
+      recipe.textContent = res.instructions;
+      recipeTitle.textContent = res.title;
+      img.src = res.image;
+    });
+}
+
+renderSavedDish(1);
 
 // fetch(
 //   "https://api.spoonacular.com/recipes/complexSearch?query=pasta&apiKey=acb2b9694ef64c6eafeff89a7dcf716f"

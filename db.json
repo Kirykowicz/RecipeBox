@@ -1,0 +1,11 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "The most goodest of all the recipes",
+      "image": "https://media.istockphoto.com/photos/green-birthday-cupcake-picture-id536950397?k=20&m=536950397&s=612x612&w=0&h=7jtPQKz9mPe44hyFJzgnOYxOVyDgboRFntVTBkZZqPk=",
+      "ingredients": "There are lots and lots of ingredients for this particular recipe",
+      "instructions": "There are lots and lots of instructions for this recipe"
+    }
+  ]
+}
