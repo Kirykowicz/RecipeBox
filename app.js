@@ -89,10 +89,9 @@ function saveRecipe(res) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(newObject),
-  });
-
-  console.log(newObject);
-  renderSavedRecipesList();
+  })
+    .then((res) => res.json())
+    .then(renderSavedRecipesList);
 }
 
 function renderSavedRecipesList() {
