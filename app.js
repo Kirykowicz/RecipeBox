@@ -92,7 +92,23 @@ function saveRecipe(res) {
   });
 
   console.log(newObject);
+  renderSavedRecipesList();
 }
+
+function renderSavedRecipesList() {
+  fetch(`http://localhost:3000/recipes`)
+    .then((res) => res.json())
+    .then((res) => {
+      savedList.innerHTML = "";
+      res.forEach((recipe) => {
+        console.log(recipe.title);
+        let li = document.createElement("li");
+        li.textContent = recipe.title;
+        savedList.append(li);
+      });
+    });
+}
+renderSavedRecipesList();
 
 // fetch(
 //   "https://api.spoonacular.com/recipes/complexSearch?query=pasta&apiKey=acb2b9694ef64c6eafeff89a7dcf716f"

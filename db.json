@@ -13,6 +13,27 @@
       "ingredients": "chillies, garlic, ground pepper, juice of lemon, parsley leaves, pasta shells, red bell pepper, tuna",
       "instructions": "<ol><li>Once pasta is cooked, drain and leave to cool for a minute.</li><li>Place small skillet on medium fire, drizzle olive oil, add in red pepper and stir-fry for 1-2 minutes. Put aside.</li><li>Toss pasta shells, red pepper, tuna, parsley, garlic, chillies and lemon juice. Season with ground black pepper to taste, spoon into serving bowls. </li></ol>",
       "id": 2
+    },
+    {
+      "title": "Simple Skillet Lasagna",
+      "image": "https://spoonacular.com/recipeImages/715573-556x370.jpg",
+      "ingredients": "basil leaves, canned tomatoes, garlic, italian sausage, mozzarella cheese, onion, oregano, packaged no-boil lasagna noodles, red pepper flakes, ricotta cheese, salt and pepper",
+      "instructions": "In a large saute pan, heat oil on high. Add sausage and cook until browned, about 3-5 minutes. Transfer to a side bowl and set aside.Reduce the heat to medium low and add your onion, garlic, and pepper flakes. Cook until onions are softened, about 8 minutes. Add your oregano, tomatoes and their juices (crushing the whole tomatoes with your hands or a mixer if you prefer), the basil sprig, and the cooked sausage. Add salt and pepper and simmer for about 5 minutes.Break half of the lasagna noodles in half and place into the meat mixture under the sausage. Distribute them evenly throughout. Take the other half of the noodles and use a spoon to submerge them down into the pan.Dollop Ricotta over lasagna and mix in with the sauce. Top with Mozzarella and bake in the oven on 325 degrees for 15 minutes. Top with basil, then remove from heat and allow to cool before serving.",
+      "id": 3
+    },
+    {
+      "title": "Italian Seafood Stew",
+      "image": "https://spoonacular.com/recipeImages/648247-556x370.jpg",
+      "ingredients": "baby bella mushrooms, bay leaves, canned tomatoes, club soda, fish stock, fresh parsley, garlic, mussels, onion, salt, seasoning, shrimps, tilapia, tomato, tomato paste",
+      "instructions": "<ol><li>Prepare ingredients.</li><li>In a large pot, heat up 3 tbsp of olive oil and add garlic and onion. Sautee over medium heat.</li><li>Add salt, tomato paste, tomatoes with juice, stock, club soda, bay leaves and stir.</li><li>Simmer over medium low heat for 30 min.</li><li>Add mushrooms.</li><li>Add salt to taste.</li><li>Cook mussels according to package directions.</li><li>Add shrimp and fish into stew.</li><li>Add mussels.</li><li>Simmer for a few minutes.</li><li>Ready to serve with some baked bread.</li></ol>",
+      "id": 4
+    },
+    {
+      "title": "Roma Tomato Bruschetta",
+      "image": "https://spoonacular.com/recipeImages/658753-556x370.jpg",
+      "ingredients": "balsamic vinegar, extra virgin olive oil, french bread, fresh basil, garlic, bell pepper, salt, tomatoes",
+      "instructions": "<ol><li>Slice the bread on a bias about 1/2 inch thick. We need about 10-12 slices.</li><li>Take 2 tablespoons of extra virgin olive oil and add salt and pepper (about 1/3 teaspoon each - as per taste).</li><li>Brush this on both sides of the bread.</li><li>Place these slices on a sheet pan and bake for about 3-4 minutes in a 400 degree preheated oven till golden brown. Once one side is done, turn over the crostini to the other side to crisp that as well.</li><li>When the crostini are hot out the oven, rub a garlic clove on them.</li><li>Chop the tomatoes.</li><li>Chiffonade the basil and add to the tomatoes.</li><li>Add salt, pepper, olive oil and balsamic vinegar and let it rest for a few minutes.</li><li>Put a generous amount of tomato on the crostini and serve.</li></ol>",
+      "id": 5
     }
   ]
 }
