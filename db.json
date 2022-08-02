@@ -6,6 +6,20 @@
       "image": "https://media.istockphoto.com/photos/green-birthday-cupcake-picture-id536950397?k=20&m=536950397&s=612x612&w=0&h=7jtPQKz9mPe44hyFJzgnOYxOVyDgboRFntVTBkZZqPk=",
       "ingredients": "There are lots and lots of ingredients for this particular recipe",
       "instructions": "There are lots and lots of instructions for this recipe"
+    },
+    {
+      "title": "Salmon Quinoa Risotto",
+      "image": "https://spoonacular.com/recipeImages/659109-556x370.jpg",
+      "ingredients": "quinoa, onion, kale, garlic cloves, olive oil, salmon, vegetable stock, salt, bell pepper",
+      "instructions": "In a 4 quart saucepan, heat 2 tablespoons of olive oil over medium high heat.\nWhen oil is shimmering, add diced onion.\nSaute onion until transparent.  Add quinoa to onion mixture and stir, to toast quinoa, for 2 minutes.\nAdd 1 cup of vegetable stock to quinoa and onions.\nStir until stock is absorbed.  Once stock is absorbed, add 1 cup of stock.\nContinue stirring until stock is absorbed.\nAdd remaining stock in 1/2 cup intervals, stirring until all stock is absorbed.\nRemove from heat.\nWhile preparing the onion quinoa mixture, heat 1 tablespoon of oil in a saute pan with chopped garlic (over medium high heat).\nOnce garlic is sizzling, add chopped kale to the pan.\nTurn kale to coat with oil and garlic.\nTurn kale mixture until fragrant (approximately 2 minutes).  Remove kale mixture from heat.\nOnce quinoa is complete, add kale and salmon.\nStir to combine.\nAdd salt and pepper to taste.",
+      "id": 2
+    },
+    {
+      "title": "Broccolini Quinoa Pilaf",
+      "image": "https://spoonacular.com/recipeImages/715769-556x370.jpg",
+      "ingredients": "broccolini, garlic clove, olive oil, onion, quinoa, vegetable broth, walnuts",
+      "instructions": "<ol><li>In a large pan with lid heat olive oil over medium high heat. Add onions and cook for 1 minute. Add garlic and cook until onions are translucent and garlic is fragrant.</li><li>Add quinoa to pan, stir to combine. Slowly add in broth and bring to a boil.</li><li>Cover and reduce heat to low, cook for 15 minutes.</li><li>In the last 2-3 minutes of cooking add in broccolini on top of the quinoa (do not stir) and cover.</li><li>Uncover and toss broccolini and quinoa together.</li><li>Season to taste with salt and pepper.</li><li>Add walnuts and serve hot.</li></ol>",
+      "id": 3
     }
   ]
 }
