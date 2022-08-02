@@ -10,6 +10,7 @@ const input = document.querySelector("#search-input");
 form.addEventListener("submit", getDishes);
 
 function getDishes(e) {
+  console.log(input.value)
   e.preventDefault();
   fetch(
     `https://api.spoonacular.com/recipes/complexSearch?cuisine=${input.value}&apiKey=acb2b9694ef64c6eafeff89a7dcf716f`
