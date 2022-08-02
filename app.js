@@ -30,6 +30,8 @@ function renderDishes(dishes) {
     searchResultsId.push(dish.id);
     let newLi = document.createElement("li");
     newLi.addEventListener("click", () => renderDishInfoFromResults(dish));
+    let newButton = document.createElement("button");
+    newButton.textContent = "☆";
     newLi.textContent = dish.title;
     listOfSearchResults.append(newLi);
   });
