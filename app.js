@@ -104,10 +104,20 @@ function renderSavedRecipesList() {
         console.log(recipe.title);
         let li = document.createElement("li");
         li.textContent = recipe.title;
+        li.addEventListener("click", () => removeRecipe(recipe));
         savedList.append(li);
       });
     });
 }
+
+function removeRecipe(recipe) {
+  fetch(`http://localhost:3000/recipes/${recipe.id}`, {
+    method: "DELETE",
+  })
+    .then((res) => res.json())
+    .then(renderSavedRecipesList);
+}
+
 renderSavedRecipesList();
 
 // fetch(
