@@ -1,4 +1,7 @@
 const img = document.querySelector("img");
+const ingredients = document.querySelector("#ingredients");
+const recipe = document.querySelector("#recipe");
+const recipeTitle = document.querySelector("#recipe-title");
 img.src = defaultImage;
 
 let searchResultsArray = [];
@@ -27,12 +30,30 @@ function renderDishes(dishes) {
     searchResultsId.push(dish.id);
     let newLi = document.createElement("li");
     let newButton = document.createElement("button");
+    newLi.addEventListener("click", () => renderDishInfoFromResults(dish));
     newButton.textContent = "ADD TO FAVORITES";
     newLi.textContent = dish.title;
     newLi.appendChild(newButton);
     listOfSearchResults.append(newLi);
-    console.log(dish);
   });
+}
+
+function renderDishInfoFromResults(dish) {
+  img.src = dish.image;
+  fetch(
+    `https://api.spoonacular.com/recipes/${dish.id}/information?includeNutrition=false&apiKey=acb2b9694ef64c6eafeff89a7dcf716f`
+  )
+    .then((res) => res.json())
+    .then((res) => {
+      console.log(res);
+      let list = [];
+      res.extendedIngredients.forEach((ingredient) =>
+        list.push(ingredient.name)
+      );
+      ingredients.textContent = list.join(", ");
+      recipe.textContent = res.instructions;
+      recipeTitle.textContent = res.title;
+    });
 }
 
 // fetch(
