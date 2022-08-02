@@ -11,6 +11,15 @@ h1 {
 #recipe-title {
   text-align: center;
   text-decoration: underline;
+  color: #fcedd8;
+  background: #d52e3f;
+  font-family: 'Niconne';
+  text-shadow: 5px 5px 0px #052939;
+  margin: 0 auto; /*Vertical and horizontal margin values*/
+}
+.authors {
+  text-align: center;
+  margin: 0 auto;
 }
 
 header {
