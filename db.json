@@ -6,6 +6,13 @@
       "image": "https://media.istockphoto.com/photos/green-birthday-cupcake-picture-id536950397?k=20&m=536950397&s=612x612&w=0&h=7jtPQKz9mPe44hyFJzgnOYxOVyDgboRFntVTBkZZqPk=",
       "ingredients": "There are lots and lots of ingredients for this particular recipe",
       "instructions": "There are lots and lots of instructions for this recipe"
+    },
+    {
+      "title": "Creamy Ratatouille Over Penne",
+      "image": "https://spoonacular.com/recipeImages/640693-556x370.jpg",
+      "ingredients": "black pepper, cooked penne, dried basil, eggplant, garlic, mascarpone cheese, olive oil, onion, oregano, red bell pepper, salt, vine ripened tomatoes, water, zucchini",
+      "instructions": "<ol><li>Heat olive oil in a large skillet over medium heat. Add onion, bell pepper, and zucchini and saut for about 7 minutes, stirring occasionally, until slightly softened.</li><li>Add eggplant and continue to saut mixture for another 3 minutes, stirring frequently. When vegetables are softened, add garlic and cook until fragrant, about 1 minute.</li><li>Add dried spices, salt, and pepper, followed by the tomato sauce and water. Allow mixture to come to a simmer and cook for 5 minutes, until slightly thickened.</li><li>Stir in mascarpone cheese and serve immediately.</li></ol>",
+      "id": 2
     }
   ]
 }
