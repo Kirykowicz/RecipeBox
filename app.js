@@ -101,6 +101,7 @@ function renderSavedRecipesList() {
         btn.addEventListener("click", () => removeRecipe(recipe));
         li.addEventListener("click", () => renderSavedDish(recipe.id));
         savedList.append(li);
+        savedList.append(btn)
       });
     });
 }
