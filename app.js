@@ -3,31 +3,26 @@ const ingredients = document.querySelector("#ingredients");
 const recipe = document.querySelector("#recipe");
 const recipeTitle = document.querySelector("#recipe-title");
 const savedList = document.querySelector("#saved-recipes");
-
-let searchResultsArray = [];
-let searchResultsId = [];
-const listOfSearchResults = document.querySelector("#search-results");
-
+const listOfSearchResults = document.querySelector("#search-results-list");
 const form = document.querySelector("form");
-form.addEventListener("submit", renderList);
+const input = document.querySelector("#search-input");
 
-function renderList(e) {
+form.addEventListener("submit", getDishes);
+
+function getDishes(e) {
   e.preventDefault();
-  let input = document.querySelector("#search-input");
   fetch(
     `https://api.spoonacular.com/recipes/complexSearch?cuisine=${input.value}&apiKey=acb2b9694ef64c6eafeff89a7dcf716f`
   )
     .then((res) => res.json())
     .then((dishes) => {
-      //   console.log(dishes.results);
-      searchResultsArray = dishes.results;
       renderDishes(dishes.results);
     });
 }
 
 function renderDishes(dishes) {
+  listOfSearchResults.innerHTML = "";
   dishes.forEach((dish) => {
-    searchResultsId.push(dish.id);
     let newLi = document.createElement("li");
     newLi.addEventListener("click", () => renderDishInfoFromResults(dish));
     newLi.textContent = dish.title;
@@ -99,8 +94,11 @@ function renderSavedRecipesList() {
       res.forEach((recipe) => {
         console.log(recipe.title);
         let li = document.createElement("li");
+        let btn = document.createElement("button");
         li.textContent = recipe.title;
-        li.addEventListener("click", () => removeRecipe(recipe));
+        btn.textContent = "Remove from favorites";
+        li.append(btn);
+        btn.addEventListener("click", () => removeRecipe(recipe));
         savedList.append(li);
       });
     });
