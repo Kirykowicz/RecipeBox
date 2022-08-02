@@ -1,20 +1,6 @@
 const img = document.querySelector("img");
 img.src = defaultImage;
 
-// fetch(
-//   "https://api.spoonacular.com/recipes/complexSearch?query=pasta&apiKey=acb2b9694ef64c6eafeff89a7dcf716f"
-// )
-//   .then((res) => res.json())
-//   .then(console.log);
-
-// fetch(
-//   "https://api.spoonacular.com/recipes/640693/information?includeNutrition=false&apiKey=acb2b9694ef64c6eafeff89a7dcf716f"
-// )
-//   .then((res) => res.json())
-//   .then((res) => {
-//     console.log(res);
-//   });
-
 let searchResultsArray = [];
 let searchResultsId = [];
 const listOfSearchResults = document.querySelector("#search-results");
@@ -38,6 +24,7 @@ function renderList(e) {
 
 function renderDishes(dishes) {
   dishes.forEach((dish) => {
+    searchResultsId.push(dish.id);
     let newLi = document.createElement("li");
     let newButton = document.createElement("button");
     newButton.textContent = "ADD TO FAVORITES";
@@ -47,6 +34,20 @@ function renderDishes(dishes) {
     console.log(dish);
   });
 }
+
+// fetch(
+//   "https://api.spoonacular.com/recipes/complexSearch?query=pasta&apiKey=acb2b9694ef64c6eafeff89a7dcf716f"
+// )
+//   .then((res) => res.json())
+//   .then(console.log);
+
+// fetch(
+//   "https://api.spoonacular.com/recipes/640693/information?includeNutrition=false&apiKey=acb2b9694ef64c6eafeff89a7dcf716f"
+// )
+//   .then((res) => res.json())
+//   .then((res) => {
+//     console.log(res);
+//   });
 
 // (10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
 // 0:

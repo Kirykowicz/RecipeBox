@@ -24,9 +24,27 @@ header {
   gap: 40px;
 }
 
-.menu-details img {
-  width: auto;
-  height: 350px;
+#results-and-favorites {
+  display: flex;
+}
+
+#dish-image {
+  width: 31%;
+}
+
+#dish-name {
+  width: 31%;
+}
+#dish-recipe {
+  width: 31%;
+}
+
+#search-results {
+  width: 50%;
+}
+
+#favorites {
+  width: 50%;
 }
 
 nav {
@@ -41,4 +59,8 @@ hr {
   color: black;
   height: 2px;
   background: black;
+}
+#form-container {
+  display: flex;
+  justify-content: center;
 }
