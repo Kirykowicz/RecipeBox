@@ -29,15 +29,11 @@ function renderDishes(dishes) {
   dishes.forEach((dish) => {
     searchResultsId.push(dish.id);
     let newLi = document.createElement("li");
-    let newButton = document.createElement("button");
     newLi.addEventListener("click", () => renderDishInfoFromResults(dish));
-    newButton.textContent = "ADD TO FAVORITES";
     newLi.textContent = dish.title;
-    newLi.appendChild(newButton);
     listOfSearchResults.append(newLi);
   });
 }
-console.log("make a small change");
 
 function renderDishInfoFromResults(dish) {
   img.src = dish.image;
