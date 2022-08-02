@@ -1,5 +1,8 @@
 const img = document.querySelector("img");
-img.src = defaultImage;
+const ingredients = document.querySelector("#ingredients");
+const recipe = document.querySelector("#recipe");
+const recipeTitle = document.querySelector("#recipe-title");
+const savedList = document.querySelector("#saved-recipes");
 
 let searchResultsArray = [];
 let searchResultsId = [];
@@ -27,14 +30,85 @@ function renderDishes(dishes) {
     searchResultsId.push(dish.id);
     let newLi = document.createElement("li");
     let newButton = document.createElement("button");
+    newLi.addEventListener("click", () => renderDishInfoFromResults(dish));
     newButton.textContent = "ADD TO FAVORITES";
     newLi.textContent = dish.title;
     newLi.appendChild(newButton);
     listOfSearchResults.append(newLi);
-    console.log(dish);
   });
 }
 console.log("make a small change");
+
+function renderDishInfoFromResults(dish) {
+  img.src = dish.image;
+
+  fetch(
+    `https://api.spoonacular.com/recipes/${dish.id}/information?includeNutrition=false&apiKey=acb2b9694ef64c6eafeff89a7dcf716f`
+  )
+    .then((res) => res.json())
+    .then((res) => {
+      console.log(res);
+      let list = [];
+      res.extendedIngredients.forEach((ingredient) =>
+        list.push(ingredient.name)
+      );
+      ingredients.textContent = list.join(", ");
+      recipe.innerHTML = res.instructions;
+      recipeTitle.textContent = res.title;
+      let saveButton = document.createElement("button");
+      saveButton.textContent = "SAVE RECIPE FOR LATER?";
+      saveButton.addEventListener("click", () => saveRecipe(res));
+      recipeTitle.append(saveButton);
+    });
+}
+function renderSavedDish(id) {
+  fetch(`http://localhost:3000/recipes/${id}`)
+    .then((res) => res.json())
+    .then((res) => {
+      ingredients.textContent = res.ingredients;
+      recipe.textContent = res.instructions;
+      recipeTitle.textContent = res.title;
+      img.src = res.image;
+    });
+}
+
+renderSavedDish(1);
+
+function saveRecipe(res) {
+  let list = [];
+  res.extendedIngredients.forEach((ingredient) => list.push(ingredient.name));
+  let newObject = {
+    title: res.title,
+    image: res.image,
+    ingredients: list.join(", "),
+    instructions: res.instructions,
+  };
+
+  fetch(`http://localhost:3000/recipes`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(newObject),
+  })
+    .then((res) => res.json())
+    .then(renderSavedRecipesList);
+}
+
+function renderSavedRecipesList() {
+  fetch(`http://localhost:3000/recipes`)
+    .then((res) => res.json())
+    .then((res) => {
+      savedList.innerHTML = "";
+      res.forEach((recipe) => {
+        console.log(recipe.title);
+        let li = document.createElement("li");
+        li.textContent = recipe.title;
+        savedList.append(li);
+      });
+    });
+}
+renderSavedRecipesList();
 
 // fetch(
 //   "https://api.spoonacular.com/recipes/complexSearch?query=pasta&apiKey=acb2b9694ef64c6eafeff89a7dcf716f"

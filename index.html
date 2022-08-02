@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="data.js"></script>
     <script defer src="app.js"></script>
     <title>Recipe Box</title>
   </head>
@@ -13,6 +12,7 @@
     <header>
       <h1>The Recipe Box Application</h1>
       <hr />
+      <h2 id="recipe-title">Name of Recipe goes here</h2>
     </header>
     <div class="container">
       <!-- <nav>
@@ -28,8 +28,8 @@
         <img src="" alt="" />
       </div>
       <div id="dish-name">
-        <h2>Ingredients for dish:</h2>
-        <p>
+        <h2>Ingredients:</h2>
+        <p id="ingredients">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit in,
           cum non necessitatibus earum, iste tempore atque laboriosam obcaecati
           laudantium quibusdam dolore repudiandae placeat, recusandae saepe
@@ -37,8 +37,8 @@
         </p>
       </div>
       <div id="dish-recipe">
-        <h2>Recipe for dish:</h2>
-        <p>
+        <h2>Recipe:</h2>
+        <p id="recipe">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit in,
           cum non necessitatibus earum, iste tempore atque laboriosam obcaecati
           laudantium quibusdam dolore repudiandae placeat, recusandae saepe
@@ -64,7 +64,7 @@
       </div>
       <div id="favorites">
         <h2>Favorites:</h2>
-        <ul id="search-results"></ul>
+        <ul id="saved-recipes"></ul>
       </div>
     </div>
   </body>
