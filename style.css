@@ -1,26 +1,29 @@
-h1 {
-  font-size: 5em;
+.names {
   text-align: center;
-}
 
-/* h2 {
-  width: 100px;
-  margin-left: auto;
-  margin-right: auto;
-} */
-ul {
-  list-style-type: none;
-}
-
-#recipe-title {
+  text-align: center;
   text-align: center;
   text-decoration: underline;
   color: #fcedd8;
   background: #d52e3f;
   font-family: "Niconne";
-  text-shadow: 5px 5px 0px #052939;
-  margin: 0 auto; /*Vertical and horizontal margin values*/
+  text-shadow: 2px 2px 0px #052939;
+  margin: 0 auto;
 }
+
+h1 {
+  font-size: 5em;
+  text-align: center;
+  text-align: center;
+  text-decoration: underline;
+  color: #fcedd8;
+  background: #d52e3f;
+  font-family: "Niconne";
+  text-shadow: 4px 4px 0px #052939;
+  margin: 0 auto;
+  /*Vertical and horizontal margin values*/
+}
+
 .authors {
   text-align: center;
   margin: 0 auto;
@@ -50,6 +53,7 @@ header {
   display: block;
   border-radius: 10px;
 }
+
 #dish-image img {
   width: 300px;
   height: 275px;
@@ -59,6 +63,7 @@ header {
 #dish-name {
   width: 31%;
 }
+
 #dish-recipe {
   width: 31%;
 }
@@ -84,6 +89,7 @@ hr {
   height: 2px;
   background: black;
 }
+
 #form-container {
   display: flex;
   justify-content: center;

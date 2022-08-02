@@ -25,8 +25,6 @@ function renderDishes(dishes) {
   dishes.forEach((dish) => {
     let newLi = document.createElement("li");
     newLi.addEventListener("click", () => renderDishInfoFromResults(dish));
-    let newButton = document.createElement("button");
-    newButton.textContent = "☆";
     newLi.textContent = dish.title;
     listOfSearchResults.append(newLi);
   });
@@ -116,8 +114,6 @@ function removeRecipe(recipe) {
 }
 
 renderSavedRecipesList();
-
-
 
 // fetch(
 //   "https://api.spoonacular.com/recipes/complexSearch?query=pasta&apiKey=acb2b9694ef64c6eafeff89a7dcf716f"
