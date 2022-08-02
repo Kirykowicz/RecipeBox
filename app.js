@@ -2,6 +2,7 @@ const img = document.querySelector("img");
 const ingredients = document.querySelector("#ingredients");
 const recipe = document.querySelector("#recipe");
 const recipeTitle = document.querySelector("#recipe-title");
+const savedList = document.querySelector("#saved-recipes");
 
 let searchResultsArray = [];
 let searchResultsId = [];
@@ -51,7 +52,7 @@ function renderDishInfoFromResults(dish) {
         list.push(ingredient.name)
       );
       ingredients.textContent = list.join(", ");
-      recipe.textContent = res.instructions;
+      recipe.innerHTML = res.instructions;
       recipeTitle.textContent = res.title;
       let saveButton = document.createElement("button");
       saveButton.textContent = "SAVE RECIPE FOR LATER?";
@@ -73,10 +74,12 @@ function renderSavedDish(id) {
 renderSavedDish(1);
 
 function saveRecipe(res) {
+  let list = [];
+  res.extendedIngredients.forEach((ingredient) => list.push(ingredient.name));
   let newObject = {
     title: res.title,
     image: res.image,
-    ingredients: res.extendedIngredients,
+    ingredients: list.join(", "),
     instructions: res.instructions,
   };
 

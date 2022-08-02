@@ -6,6 +6,13 @@
       "image": "https://media.istockphoto.com/photos/green-birthday-cupcake-picture-id536950397?k=20&m=536950397&s=612x612&w=0&h=7jtPQKz9mPe44hyFJzgnOYxOVyDgboRFntVTBkZZqPk=",
       "ingredients": "There are lots and lots of ingredients for this particular recipe",
       "instructions": "There are lots and lots of instructions for this recipe"
+    },
+    {
+      "title": "Italian Tuna Pasta",
+      "image": "https://spoonacular.com/recipeImages/648279-556x370.jpg",
+      "ingredients": "chillies, garlic, ground pepper, juice of lemon, parsley leaves, pasta shells, red bell pepper, tuna",
+      "instructions": "<ol><li>Once pasta is cooked, drain and leave to cool for a minute.</li><li>Place small skillet on medium fire, drizzle olive oil, add in red pepper and stir-fry for 1-2 minutes. Put aside.</li><li>Toss pasta shells, red pepper, tuna, parsley, garlic, chillies and lemon juice. Season with ground black pepper to taste, spoon into serving bowls. </li></ol>",
+      "id": 2
     }
   ]
 }
