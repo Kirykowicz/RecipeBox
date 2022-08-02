@@ -36,3 +36,9 @@ nav {
 nav li:hover {
   color: #ab7e02;
 }
+
+hr {
+  color: black;
+  height: 2px;
+  background: black;
+}
