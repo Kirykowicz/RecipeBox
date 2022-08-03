@@ -5,10 +5,28 @@
   text-align: center;
   text-decoration: underline;
   color: #fcedd8;
-  background: #d52e3f;
+  background: #e55743;
   font-family: "Niconne";
   text-shadow: 2px 2px 0px #052939;
   margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.backgroundImage {
+  background-image: url("https://www.foodiesfeed.com/wp-content/uploads/2021/01/hot-shakshuka-819x1024.jpg.webp");
+  padding: 40px;
+
+}
+
+.contents {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+
 }
 
 h1 {
@@ -17,11 +35,14 @@ h1 {
   text-align: center;
   text-decoration: underline;
   color: #fcedd8;
-  background: #d52e3f;
+  background: #e55743;
   font-family: "Niconne";
   text-shadow: 4px 4px 0px #052939;
   margin: 0 auto;
-  /*Vertical and horizontal margin values*/
+}
+
+h2 {
+  text-align: center;
 }
 
 .authors {
@@ -30,7 +51,8 @@ h1 {
 }
 
 header {
-  margin-top: 5em;
+  margin-top: 2em;
+
 }
 
 .container {
@@ -48,7 +70,7 @@ header {
   display: flex;
 }
 
-#dish-image > img {
+#dish-image>img {
   width: 90%;
   display: block;
   border-radius: 10px;
@@ -64,6 +86,10 @@ header {
   width: 31%;
 }
 
+#ingredients {
+  font-size: 15px
+}
+
 #dish-recipe {
   width: 31%;
 }
@@ -72,17 +98,37 @@ header {
   width: 50%;
 }
 
+/* #search-results-list{
+  background-color: #e55743;
+  /* background-color: #fcedd8
+  */
+/*} */
+#search-results-list>li {
+  text-align: center;
+  border: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 600; /* mess with boldness later*/
+  border-radius: 10px;
+  padding: 10px;
+  margin: 7px;
+
+}
+
+#search-results-list>li:nth-child(odd) {
+  background-color: #e55743;
+
+
+}
+
+#search-results-list>li:nth-child(even) {
+  background-color: #e97667
+}
+
 #favorites {
   width: 50%;
 }
 
-nav {
-  width: 25%;
-}
-
-nav li:hover {
-  color: #ab7e02;
-}
 
 hr {
   color: black;
