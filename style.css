@@ -13,6 +13,7 @@
 
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .backgroundImage {
@@ -40,6 +41,10 @@ h1 {
   margin: 0 auto;
 }
 
+h2 {
+  text-align: center;
+}
+
 .authors {
   text-align: center;
   margin: 0 auto;
@@ -47,7 +52,7 @@ h1 {
 
 header {
   margin-top: 2em;
-  
+
 }
 
 .container {
@@ -81,6 +86,10 @@ header {
   width: 31%;
 }
 
+#ingredients {
+  font-size: 15px
+}
+
 #dish-recipe {
   width: 31%;
 }
@@ -89,17 +98,37 @@ header {
   width: 50%;
 }
 
+/* #search-results-list{
+  background-color: #e55743;
+  /* background-color: #fcedd8
+  */
+/*} */
+#search-results-list>li {
+  text-align: center;
+  border: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 600; /* mess with boldness later*/
+  border-radius: 10px;
+  padding: 10px;
+  margin: 7px;
+
+}
+
+#search-results-list>li:nth-child(odd) {
+  background-color: #e55743;
+
+
+}
+
+#search-results-list>li:nth-child(even) {
+  background-color: #e97667
+}
+
 #favorites {
   width: 50%;
 }
 
-nav {
-  width: 25%;
-}
-
-nav li:hover {
-  color: #ab7e02;
-}
 
 hr {
   color: black;
