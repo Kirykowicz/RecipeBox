@@ -33,9 +33,10 @@ body {
   border-radius: 10px;
 }
 
+
 h2:not(#recipe-title) {
   text-decoration: underline;
-}
+
 
 h2{
   text-align: center;
@@ -88,7 +89,6 @@ button {
 
 header {
   margin-top: 2em;
-
 }
 
 .container {
@@ -137,10 +137,10 @@ header {
 }
 
 
+
 #favorites {
   width: 50%;
 }
-
 
 hr {
   color: black;
