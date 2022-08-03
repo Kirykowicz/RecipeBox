@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((res) => res.json())
       .then((res) => {
         ingredients.textContent = res.ingredients;
-        recipe.textContent = res.instructions;
+        recipe.innerHTML = res.instructions;
         recipeTitle.textContent = res.title;
         img.src = res.image;
       });
