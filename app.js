@@ -6,11 +6,15 @@ const savedList = document.querySelector("#saved-recipes");
 const listOfSearchResults = document.querySelector("#search-results-list");
 const form = document.querySelector("form");
 const input = document.querySelector("#search-input");
+img.src = defaultImage;
+ingredients.textContent = defaultIngredient;
+recipe.textContent = defaultRecipe;
+recipeTitle.textContent = defaultTitle;
 
 form.addEventListener("submit", getDishes);
 
 function getDishes(e) {
-  console.log(input.value)
+  console.log(input.value);
   e.preventDefault();
   fetch(
     `https://api.spoonacular.com/recipes/complexSearch?cuisine=${input.value}&apiKey=acb2b9694ef64c6eafeff89a7dcf716f`
@@ -64,8 +68,6 @@ function renderSavedDish(id) {
     });
 }
 
-renderSavedDish(1);
-
 function saveRecipe(res) {
   let list = [];
   res.extendedIngredients.forEach((ingredient) => list.push(ingredient.name));
@@ -102,7 +104,7 @@ function renderSavedRecipesList() {
         btn.addEventListener("click", () => removeRecipe(recipe));
         li.addEventListener("click", () => renderSavedDish(recipe.id));
         savedList.append(li);
-        savedList.append(btn)
+        savedList.append(btn);
       });
     });
 }
