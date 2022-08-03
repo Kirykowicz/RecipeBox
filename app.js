@@ -28,7 +28,7 @@ function getDishes(e) {
 function renderDishes(dishes) {
   listOfSearchResults.innerHTML = "";
   dishes.forEach((dish) => {
-    let newLi = document.createElement("li");
+    let newLi = document.createElement("div");
     newLi.addEventListener("click", () => renderDishInfoFromResults(dish));
     newLi.textContent = dish.title;
     listOfSearchResults.append(newLi);

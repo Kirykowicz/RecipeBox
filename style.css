@@ -7,7 +7,7 @@ h1 {
   color: #fcedd8;
   background: #e55743;
   font-family: "Niconne";
-  text-shadow: 2px 2px 0px #052939;
+  text-shadow: 1px 2px 0px #052939;
   margin: 0 auto;
 }
 
@@ -18,6 +18,7 @@ h1 {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 .backgroundImage {
@@ -26,23 +27,28 @@ body {
 }
 
 .contents {
+
   background: white;
   padding: 15px;
   border-radius: 10px;
 }
+
 h2:not(#recipe-title) {
   text-decoration: underline;
 }
-h2 {
+
+h2{
   text-align: center;
   margin-top: -5px;
   font-size: 30px;
-  font-family: "Niconne";
+  font-family:sans-serif;
+  font-weight: lighter;
 }
 
 
 button,
-input[type="submit"] {
+input[type="submit"],
+#search-results-list>div {
   --border-size: 2px;
   position: relative;
   padding: .25em 1.5em;
@@ -54,6 +60,19 @@ input[type="submit"] {
   font-weight: bold;
   box-shadow: inset 0 0 0 var(--border-size) currentcolor;
   text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+}
+
+#search-results-list>div {
+  padding: 10px;
+  margin: 7px;
+}
+button:hover,
+input[type="submit"]:hover,
+#search-results-list>li:hover{
+  font-weight: 600;
+  background-color: rgb(251, 251, 246);
 }
 
 button {
@@ -61,8 +80,6 @@ button {
   margin-left: 1em;
   padding: .5em 1.5em;
 }
-
-
 
 .authors {
   text-align: center;
@@ -91,8 +108,10 @@ header {
 
 
 #dish-image img {
-  width: auto;
+  width: 300px;
   height: auto;
+  max-height: 400px;
+  max-width: 400px;
   align-self: center;
   border-radius: 50px;
 }
@@ -100,11 +119,12 @@ header {
 #dish-name {
   width: 31%;
   text-align: center;
-  padding: 20px
+  padding: 20px;
+  direction: flex;
 }
 
 #ingredients {
-  font-size: 15px
+  font-size: 15px;
 }
 
 #dish-recipe {
@@ -116,36 +136,6 @@ header {
   width: 50%;
 }
 
-#search-results-list>li {
-  text-align: center;
-  border: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(0, 0, 0);
-  font-weight: 500;
-  /* mess with boldness later*/
-  border-radius: 10px;
-  padding: 10px;
-  margin: 7px;
-  cursor: pointer
-}
-
-#search-results-list>li:hover:nth-child(odd) {
-  background-color: #d54e3c;
-  font-weight: 600;
-}
-
-#search-results-list>li:hover:nth-child(even) {
-  background-color: #cc5f50;
-  font-weight: 600;
-}
-
-#search-results-list>li:nth-child(odd) {
-  background-color: #e55743;
-}
-
-#search-results-list>li:nth-child(even) {
-  background-color: #e97667
-}
 
 #favorites {
   width: 50%;
