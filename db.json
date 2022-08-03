@@ -1,32 +1,3 @@
 {
-  "recipes": [
-    {
-      "title": "Turkey Tomato Cheese Pizza",
-      "image": "https://spoonacular.com/recipeImages/715495-556x370.jpg",
-      "ingredients": "green bell pepper, parsley, bell pepper, pie crust, roma tomato, shredded mozzarella cheese, tomato sauce, turkey breast, white onion",
-      "instructions": "Heat up your grill to 450 degrees.Start off with your whole wheat crust and spread the tomato sauce evenly over the top. Add a little cheese, bell pepper, onion, turkey and create a layer.Top with another layer of cheese, turkey, tomato, bell pepper, onion.Add another layer of cheese, and then sprinkle with pepper.Place the pizza on a ceramic grill plate and place into the grill.Grill for 6-10 minutes, or until cooked as desired.Slice, and serve immediately.",
-      "id": 1
-    },
-    {
-      "title": "Turkey Tomato Cheese Pizza",
-      "image": "https://spoonacular.com/recipeImages/715495-556x370.jpg",
-      "ingredients": "green bell pepper, parsley, bell pepper, pie crust, roma tomato, shredded mozzarella cheese, tomato sauce, turkey breast, white onion",
-      "instructions": "Heat up your grill to 450 degrees.Start off with your whole wheat crust and spread the tomato sauce evenly over the top. Add a little cheese, bell pepper, onion, turkey and create a layer.Top with another layer of cheese, turkey, tomato, bell pepper, onion.Add another layer of cheese, and then sprinkle with pepper.Place the pizza on a ceramic grill plate and place into the grill.Grill for 6-10 minutes, or until cooked as desired.Slice, and serve immediately.",
-      "id": 2
-    },
-    {
-      "title": "Spanish style salmon fillets",
-      "image": "https://spoonacular.com/recipeImages/1095806-556x370.jpg",
-      "ingredients": "croutons, olives, onions, bell peppers, paprika, coarse sea salt, ground pepper, olive oil, salmon fillets",
-      "instructions": "<ol><li>Cut onions into wedges and slice bell peppers into strips.</li><li>Put the croutons, olives, onions, and peppers on a baking sheet. </li><li> Add the smoked paprika, salt, pepper and 3 tablespoons of the olive oil and toss until everything is evenly coated. Bake in the oven at 400F for about 15 minutes.</li><li>Rub the salmon fillets with the remaining 2 tablespoons olive oil and season with the remaining salt and pepper. </li><li>Arrange the fillets among the vegetables and croutons on the baking sheet. Bake for 10-15 minutes or until the salmon is cooked.</li></ol>",
-      "id": 3
-    },
-    {
-      "title": "Spanish “Ketchup” – Romesco Sauce",
-      "image": "https://spoonacular.com/recipeImages/660883-556x370.jpg",
-      "ingredients": "fire roasted tomatoes, red bell peppers, garlic, almonds, red wine vinegar, sugar, oregano, fresh flat-leaf parsley, fresh rosemary, smoked paprika, chili powder, olive oil, kosher salt",
-      "instructions": "Fire up your grill to roast the red bell peppers.  Lightly coat the red peppers with olive oil & place on a pre-heated grill over high heat.  Turn the peppers occasionally to char the skin black  10 to 15 minutes.\nRemove the peppers from the grill & place in a bowl.  Cover with plastic wrap  10 minutes.  Peel & discard the skin, seeds & veins;  Rough chop the peppers & place in a food processor.  Add all the other ingredients & pulse until blended.  Slowly add the olive oil & blend until smooth.  Season with salt & pepper.\nYou can serve the romesco sauce at room temperature or chilled.  If needed, gently warm the sauce over low heat.  Over heating the sauce will could cause it to separate.  If so, pour separated sauce in a blender & process for 1 minute.",
-      "id": 4
-    }
-  ]
+  "recipes": []
 }

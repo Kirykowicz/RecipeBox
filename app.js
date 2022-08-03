@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
+
   function renderDishes(dishes) {
     listOfSearchResults.innerHTML = "";
     dishes.forEach((dish) => {
