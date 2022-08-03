@@ -26,11 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
-
   function renderDishes(dishes) {
     listOfSearchResults.innerHTML = "";
     dishes.forEach((dish) => {
-      let newLi = document.createElement("div");
+      let newLi = document.createElement("li");
       newLi.addEventListener("click", () => renderDishInfoFromResults(dish));
       newLi.textContent = dish.title;
       listOfSearchResults.append(newLi);
@@ -98,10 +97,10 @@ document.addEventListener("DOMContentLoaded", () => {
         savedList.innerHTML = "";
         res.forEach((recipe) => {
           console.log(recipe.title);
-          let li = document.createElement("div");
+          let li = document.createElement("li");
           let btn = document.createElement("button");
           li.textContent = recipe.title;
-          btn.textContent = "X";
+          btn.textContent = "Remove from favorites";
           li.append(btn);
           btn.addEventListener("click", () => removeRecipe(recipe));
           li.addEventListener("click", () => renderSavedDish(recipe.id));
