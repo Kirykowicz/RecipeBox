@@ -28,12 +28,10 @@ body {
 }
 
 .contents {
-
   background: white;
   padding: 15px;
   border-radius: 10px;
 }
-
 
 h2:not(#recipe-title) {
   text-decoration: underline;
@@ -47,22 +45,25 @@ h2 {
   font-weight: lighter;
 }
 
-
 button,
 input[type="submit"],
+
 #search-results-list>div,
 #dish-name,
 #dish-recipe,
 #search-results,
 #favorites,
 #saved-recipes>div {
+
   --border-size: 2px;
   position: relative;
-  padding: .25em 1.5em;
+  padding: 0.25em 1.5em;
   border: 0;
   background: transparent;
   color: #e55743;
+
   letter-spacing: .25em;
+
   font-weight: bold;
   box-shadow: inset 0 0 0 var(--border-size) currentcolor;
   text-transform: uppercase;
@@ -72,6 +73,7 @@ input[type="submit"],
   margin: 7px;
 }
 
+
 #dish-image img {
   /*Change border height later*/
   --border-size: 2px;
@@ -80,6 +82,7 @@ input[type="submit"],
   padding: .25em 1.5em;
   color: #e55743;
   box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+
   padding: 10px;
   margin: 7px;
 }
@@ -99,12 +102,15 @@ button {
 
 button:hover,
 input[type="submit"]:hover,
+
 #search-results-list>div:hover,
 #saved-recipes>div:hover {
+
   font-weight: 600;
   background-color: rgb(251, 251, 246);
   cursor: pointer;
 }
+
 
 #recipe-title {
   position: relative;
@@ -116,6 +122,7 @@ input[type="submit"]:hover,
   font-weight: 500;
   padding: 10px;
   margin: 7px;
+
 }
 
 
@@ -146,6 +153,8 @@ header {
 
 
 
+
+
 #dish-name {
   width: 31%;
   text-align: center;
@@ -159,14 +168,11 @@ header {
 
 #dish-recipe {
   width: 31%;
-
 }
 
 #search-results {
   width: 50%;
 }
-
-
 
 #favorites {
   width: 50%;
