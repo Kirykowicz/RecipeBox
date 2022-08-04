@@ -1,18 +1,12 @@
 {
   "recipes": [
     {
-      "title": "Turkey Tomato Cheese Pizza",
-      "image": "https://spoonacular.com/recipeImages/715495-556x370.jpg",
-      "ingredients": "green bell pepper, parsley, bell pepper, pie crust, roma tomato, shredded mozzarella cheese, tomato sauce, turkey breast, white onion",
-      "instructions": "Heat up your grill to 450 degrees.Start off with your whole wheat crust and spread the tomato sauce evenly over the top. Add a little cheese, bell pepper, onion, turkey and create a layer.Top with another layer of cheese, turkey, tomato, bell pepper, onion.Add another layer of cheese, and then sprinkle with pepper.Place the pizza on a ceramic grill plate and place into the grill.Grill for 6-10 minutes, or until cooked as desired.Slice, and serve immediately.",
+      "title": "Baked Ratatouille",
+      "image": "https://spoonacular.com/recipeImages/633754-556x370.jpg",
+      "ingredients": "eggplant, feta cheese, fresh basil, garlic cloves, green bell peppers, olive oil, onion, red wine vinegar, tomatoes, zucchini",
+      "instructions": "<ol><li>Heat oil in a heavy, large Dutch oven over medium heat. Add garlic; stir 1 minute. Add eggplant, green bell peppers, tomatoes, onion, zucchini and basil. Saute for 5 minutes. Cover and simmer until all vegetables are tender, stirring occasionally, about 25 minutes.</li><li>Uncover pot and simmer until juice thickens, stirring occasionally, about 10 minutes. Mix in vinegar; season to taste with salt and pepper.</li><li>Preheat oven to 350 degrees. Spread in 9-inch pie dish. Sprinkle with cheese, if desired. Bake until heated through, about 20 minutes.</li><li>This recipe yields about 3 cups.</li><li>Yield: 3 cups</li></ol>",
       "id": 1
-    },
-    {
-      "title": "Broccolini Quinoa Pilaf",
-      "image": "https://spoonacular.com/recipeImages/715769-556x370.jpg",
-      "ingredients": "broccolini, garlic clove, olive oil, onion, quinoa, vegetable broth, walnuts",
-      "instructions": "<ol><li>In a large pan with lid heat olive oil over medium high heat. Add onions and cook for 1 minute. Add garlic and cook until onions are translucent and garlic is fragrant.</li><li>Add quinoa to pan, stir to combine. Slowly add in broth and bring to a boil.</li><li>Cover and reduce heat to low, cook for 15 minutes.</li><li>In the last 2-3 minutes of cooking add in broccolini on top of the quinoa (do not stir) and cover.</li><li>Uncover and toss broccolini and quinoa together.</li><li>Season to taste with salt and pepper.</li><li>Add walnuts and serve hot.</li></ol>",
-      "id": 2
+
     }
   ]
 }

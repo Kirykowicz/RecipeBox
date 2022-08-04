@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
           let li = document.createElement("div");
           let btn = document.createElement("button");
           li.textContent = recipe.title;
-          btn.textContent = "SAVE RECIPE FOR LATER?";
+          btn.textContent = "X";
           li.append(btn);
           btn.addEventListener("click", () => removeRecipe(recipe));
           li.addEventListener("click", () => renderSavedDish(recipe.id));
