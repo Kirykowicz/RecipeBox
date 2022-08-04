@@ -23,6 +23,7 @@ body {
 
 .backgroundImage {
   background-image: url("https://www.foodiesfeed.com/wp-content/uploads/2021/01/hot-shakshuka-819x1024.jpg.webp");
+  background-repeat: repeat;
   padding: 40px;
 }
 
@@ -49,7 +50,12 @@ h2 {
 
 button,
 input[type="submit"],
-#search-results-list>div {
+#search-results-list>div,
+#dish-name,
+#dish-recipe,
+#search-results,
+#favorites,
+#saved-recipes>div {
   --border-size: 2px;
   position: relative;
   padding: .25em 1.5em;
@@ -57,31 +63,62 @@ input[type="submit"],
   background: transparent;
   color: #e55743;
   letter-spacing: .25em;
-  cursor: pointer;
   font-weight: bold;
   box-shadow: inset 0 0 0 var(--border-size) currentcolor;
   text-transform: uppercase;
   text-align: center;
   font-weight: 500;
-}
-
-#search-results-list>div {
   padding: 10px;
   margin: 7px;
 }
 
-button:hover,
-input[type="submit"]:hover,
-#search-results-list>div:hover {
-  font-weight: 600;
-  background-color: rgb(251, 251, 246);
+#dish-image img {
+  /*Change border height later*/
+  --border-size: 2px;
+  border-width: 500px;
+  position: relative;
+  padding: .25em 1.5em;
+  color: #e55743;
+  box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+  padding: 10px;
+  margin: 7px;
+}
+
+#dish-image img {
+  width: 300px;
+  height: auto;
+  max-height: 400px;
+  max-width: 400px;
+  align-self: center;
+  border-radius: 50px;
 }
 
 button {
   display: block;
-  margin-left: 1em;
-  padding: .5em 1.5em;
 }
+
+button:hover,
+input[type="submit"]:hover,
+#search-results-list>div:hover,
+#saved-recipes>div:hover {
+  font-weight: 600;
+  background-color: rgb(251, 251, 246);
+  cursor: pointer;
+}
+
+#recipe-title {
+  position: relative;
+  color: #e55743;
+  letter-spacing: .25em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  padding: 10px;
+  margin: 7px;
+}
+
+
 
 .authors {
   text-align: center;
@@ -108,14 +145,6 @@ header {
 }
 
 
-#dish-image img {
-  width: 300px;
-  height: auto;
-  max-height: 400px;
-  max-width: 400px;
-  align-self: center;
-  border-radius: 50px;
-}
 
 #dish-name {
   width: 31%;
