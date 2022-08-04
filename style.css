@@ -23,8 +23,11 @@ body {
 
 .backgroundImage {
   background-image: url("https://www.foodiesfeed.com/wp-content/uploads/2021/01/hot-shakshuka-819x1024.jpg.webp");
-  background-repeat: repeat;
-  padding: 40px;
+  /* background-repeat: repeat; */
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 100%;
 }
 
 .contents {
@@ -47,14 +50,12 @@ h2 {
 
 button,
 input[type="submit"],
-
-#search-results-list>div,
+#search-results-list > div,
 #dish-name,
 #dish-recipe,
 #search-results,
 #favorites,
-#saved-recipes>div {
-
+#saved-recipes > div {
   --border-size: 2px;
   position: relative;
   padding: 0.25em 1.5em;
@@ -62,7 +63,7 @@ input[type="submit"],
   background: transparent;
   color: #e55743;
 
-  letter-spacing: .25em;
+  letter-spacing: 0.25em;
 
   font-weight: bold;
   box-shadow: inset 0 0 0 var(--border-size) currentcolor;
@@ -73,13 +74,12 @@ input[type="submit"],
   margin: 7px;
 }
 
-
 #dish-image img {
   /*Change border height later*/
   --border-size: 2px;
   border-width: 500px;
   position: relative;
-  padding: .25em 1.5em;
+  padding: 0.25em 1.5em;
   color: #e55743;
   box-shadow: inset 0 0 0 var(--border-size) currentcolor;
 
@@ -102,30 +102,24 @@ button {
 
 button:hover,
 input[type="submit"]:hover,
-
-#search-results-list>div:hover,
-#saved-recipes>div:hover {
-
+#search-results-list > div:hover,
+#saved-recipes > div:hover {
   font-weight: 600;
   background-color: rgb(251, 251, 246);
   cursor: pointer;
 }
 
-
 #recipe-title {
   position: relative;
   color: #e55743;
-  letter-spacing: .25em;
+  letter-spacing: 0.25em;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   font-weight: 500;
   padding: 10px;
   margin: 7px;
-
 }
-
-
 
 .authors {
   text-align: center;
@@ -150,10 +144,6 @@ header {
 #results-and-favorites {
   display: flex;
 }
-
-
-
-
 
 #dish-name {
   width: 31%;
