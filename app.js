@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
-
   function renderDishes(dishes) {
     listOfSearchResults.innerHTML = "";
     dishes.forEach((dish) => {
@@ -120,6 +119,15 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   renderSavedRecipesList();
+
+  img.addEventListener("mouseover", () => {
+    console.log("mouse!");
+    img.style.width = "500px";
+  });
+  img.addEventListener("mouseout", () => {
+    console.log("mouse!");
+    img.style.width = "300px";
+  });
 });
 
 // fetch(
