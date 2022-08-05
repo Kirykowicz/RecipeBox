@@ -16,6 +16,10 @@ h1 {
   text-shadow: 4px 4px 0px #052939;
 }
 
+header {
+  margin-top: 2em;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -23,11 +27,8 @@ body {
 
 .backgroundImage {
   background-image: url("https://www.foodiesfeed.com/wp-content/uploads/2021/01/hot-shakshuka-819x1024.jpg.webp");
-  /* background-repeat: repeat; */
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 100%;
+  padding: 40px;
+  padding-bottom: 25%;
 }
 
 .contents {
@@ -48,65 +49,75 @@ h2 {
   font-weight: lighter;
 }
 
+#saved-recipes>div,
+#saved-recipes>button {
+  display: inline-block;
+}
+
 button,
 input[type="submit"],
-#search-results-list > div,
-#dish-name,
-#dish-recipe,
+#search-results-list>div,
+#form-container,
+#search-input,
 #search-results,
 #favorites,
-#saved-recipes > div {
-  --border-size: 2px;
-  position: relative;
+#saved-recipes>div,
+#dish-image img,
+#dish-name,
+#dish-recipe {
   padding: 0.25em 1.5em;
   border: 0;
+  direction: flex;
   background: transparent;
-  color: #e55743;
-
+  border: 2px solid #e55743;
   letter-spacing: 0.25em;
-
-  font-weight: bold;
-  box-shadow: inset 0 0 0 var(--border-size) currentcolor;
   text-transform: uppercase;
   text-align: center;
   font-weight: 500;
-  padding: 10px;
+  padding: 12px;
   margin: 7px;
+  color: rgb(145, 84, 40);
+}
+
+#form-container,
+#search-input {
+  font-weight: bold;
+}
+
+#ingredients,
+#recipe {
+  text-transform: lowercase;
+  font-weight: bold;
+}
+
+#search-input {
+  padding: 4px;
 }
 
 #dish-image img {
-  /*Change border height later*/
-  --border-size: 2px;
-  border-width: 500px;
-  position: relative;
-  padding: 0.25em 1.5em;
-  color: #e55743;
-  box-shadow: inset 0 0 0 var(--border-size) currentcolor;
-
-  padding: 10px;
-  margin: 7px;
-}
-
-#dish-image img {
-  width: 300px;
-  height: auto;
   max-height: 400px;
   max-width: 400px;
   align-self: center;
   border-radius: 50px;
 }
 
-button {
+#saved-recipes {
   display: block;
+}
+
+#search-input:focus {
+  background-color: rgb(251, 251, 246);
+  border: 2px solid #e55743;
 }
 
 button:hover,
 input[type="submit"]:hover,
-#search-results-list > div:hover,
-#saved-recipes > div:hover {
+#search-results-list>div:hover,
+#saved-recipes>div:hover {
   font-weight: 600;
   background-color: rgb(251, 251, 246);
   cursor: pointer;
+  border-radius: 10px;
 }
 
 #recipe-title {
@@ -121,60 +132,22 @@ input[type="submit"]:hover,
   margin: 7px;
 }
 
-.authors {
-  text-align: center;
-  margin: 0 auto;
-}
-
-header {
-  margin-top: 2em;
-}
-
-.container {
-  display: flex;
-}
-
-.menu-details {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  gap: 40px;
-}
-
+.container,
 #results-and-favorites {
   display: flex;
 }
 
-#dish-name {
-  width: 31%;
-  text-align: center;
-  padding: 20px;
-  direction: flex;
-}
-
-#ingredients {
-  font-size: 15px;
-}
-
+#dish-name,
 #dish-recipe {
   width: 31%;
 }
 
-#search-results {
-  width: 50%;
-}
-
+#search-results,
 #favorites {
   width: 50%;
 }
 
 hr {
-  color: black;
   height: 2px;
   background: black;
-}
-
-#form-container {
-  display: flex;
-  justify-content: center;
 }
