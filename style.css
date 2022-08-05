@@ -56,7 +56,7 @@ h2 {
 
 button,
 input[type="submit"],
-#search-results-list>div,
+#search-results-list>div:not(.emptySearch),
 #form-container,
 #search-input,
 #search-results,
@@ -77,6 +77,12 @@ input[type="submit"],
   padding: 12px;
   margin: 7px;
   color: rgb(145, 84, 40);
+}
+
+.emptySearch {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
 }
 
 #form-container,
@@ -112,7 +118,7 @@ input[type="submit"],
 
 button:hover,
 input[type="submit"]:hover,
-#search-results-list>div:hover,
+#search-results-list>div:not(.emptySearch):hover,
 #saved-recipes>div:hover {
   font-weight: 600;
   background-color: rgb(251, 251, 246);
@@ -137,9 +143,8 @@ input[type="submit"]:hover,
   display: flex;
 }
 
-#dish-name,
-#dish-recipe {
-  width: 31%;
+#recipe-title>button {
+  display: block
 }
 
 #search-results,
@@ -150,4 +155,15 @@ input[type="submit"]:hover,
 hr {
   height: 2px;
   background: black;
+}
+
+
+@media only screen and (max-width: 1255px) {
+  /*if the max width of the viewport is <600 apply these styles instead*/
+
+  .container,
+  #results-and-favorites {
+    flex-direction: column;
+  }
+
 }
