@@ -1,12 +1,4 @@
 {
   "recipes": [
-    {
-      "title": "Baked Ratatouille",
-      "image": "https://spoonacular.com/recipeImages/633754-556x370.jpg",
-      "ingredients": "eggplant, feta cheese, fresh basil, garlic cloves, green bell peppers, olive oil, onion, red wine vinegar, tomatoes, zucchini",
-      "instructions": "<ol><li>Heat oil in a heavy, large Dutch oven over medium heat. Add garlic; stir 1 minute. Add eggplant, green bell peppers, tomatoes, onion, zucchini and basil. Saute for 5 minutes. Cover and simmer until all vegetables are tender, stirring occasionally, about 25 minutes.</li><li>Uncover pot and simmer until juice thickens, stirring occasionally, about 10 minutes. Mix in vinegar; season to taste with salt and pepper.</li><li>Preheat oven to 350 degrees. Spread in 9-inch pie dish. Sprinkle with cheese, if desired. Bake until heated through, about 20 minutes.</li><li>This recipe yields about 3 cups.</li><li>Yield: 3 cups</li></ol>",
-      "id": 1
-
-    }
   ]
 }
